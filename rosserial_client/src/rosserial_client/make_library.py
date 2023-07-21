@@ -591,4 +591,3 @@ def rosserial_client_copy_files(rospack, path):
     mydir = rospack.get_path("rosserial_client")
     for f in files:
         shutil.copyfile(os.path.join(mydir, "src", "ros_lib", f), os.path.join(path, f))
-
