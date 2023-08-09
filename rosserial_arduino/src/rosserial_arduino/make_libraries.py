@@ -88,4 +88,4 @@ shutil.copytree(os.path.join(rospack.get_path(THIS_PACKAGE), "src", "ros_lib"), 
 rosserial_client_copy_files(rospack, output_path)
 
 # generate messages
-rosserial_generate(rospack, output_path, ROS_TO_EMBEDDED_TYPES)
+rosserial_generate(rospack, path+"/ros_lib", ROS_TO_EMBEDDED_TYPES)
